@@ -1,0 +1,349 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav{
+    background-color: black;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav .logo{
+    display: inline-block;
+    height: inherit;
+    margin: 8px;
+    padding-top: 25px;
+    margin-left: 2em;
+}
+
+nav ul{
+    float:right;
+}
+
+nav * {
+    color: white;
+}
+
+nav .logo span{
+    color: green;
+}
+
+ul{
+    float: right;
+    margin-right: 1em;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    
+}
+
+ul li a{
+    margin-top: 18px;
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: darkgray;
+    transition: 0.5s;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.firstimg{
+    background-color: green;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.firstimg img{
+    display: block;
+    width: 100%;
+    height: 750px;
+    filter: blur(5px);
+}
+
+.title{
+    position: absolute;
+    bottom: 35%;
+    width: inherit;
+    font-size: 100px;
+}
+
+#scroll-to-button {
+    position: absolute;
+    top: 90%;
+    left: 40%;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    
+}
+
+#scroll-to-button:hover{
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+#quote{
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+}
+
+.place1{
+    background-color: black;
+    height: auto;
+    padding: 10px;
+}
+
+.place1 h2{
+    color: white;
+    margin: 10px;
+
+}
+
+.place1 p{
+    color: white;
+    text-align: justify;
+    margin: 10px;
+}
+
+.place1 img{
+    width: 50%;
+    margin: 10px auto;
+    margin-left: 330px;
+}
+
+.place2{
+    background-color: white;
+    height: auto;
+    padding: 10px;
+}
+
+.place2 h2{
+    color: black;
+    margin: 10px;
+
+}
+
+.place2 p{
+    color: black;
+    text-align: justify;
+    margin: 10px;
+}
+
+.place2 img{
+    width: 50%;
+    margin: 10px auto;
+    margin-left: 330px;
+}
+
+.place3{
+    background-color: black;
+    height: auto;
+    padding: 10px;
+}
+
+.place3 h2{
+    color: white;
+    margin: 10px;
+
+}
+
+.place3 p{
+    color: white;
+    text-align: justify;
+    margin: 10px;
+}
+
+.place3 img{
+    width: 50%;
+    margin: 10px auto;
+    margin-left: 330px;
+}
+
+#references{
+    background-color: white;
+    height: auto;
+    padding: 10px;
+}
+
+#references{
+    color: black;
+    margin: 10px;
+
+}
+
+#references{
+    color: black;
+    text-align: justify;
+    margin: 10px;
+}
+
+#footer{
+
+        border-top: 10px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 10px;
+        border-color: black;
+        border-style: solid;
+        text-align: center;
+        margin: 30px;
+        height: 300px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+        background-color: white;
+}
+
+
+@media (max-width: 952px){
+    .checkbtn{
+        padding: 10px;
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: gray;
+        top: 80px;
+        text-align: center;
+        right: -100%;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+       
+    }
+
+    nav ul li a{
+        display: block;
+        font-size: 25px;
+        color: black;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+    }
+
+    #scroll-to-button{
+        margin: -10px;
+        left: 35%;
+    }
+
+
+}
+
+@media only screen and (max-width: 680px){
+    nav .logo{
+       margin: 15px;
+       font-size: inherit;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+
+
+    .checkbtn{
+        padding: 10px;
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: gray;
+        top: 80px;
+        text-align: center;
+        right: -100%;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+       
+    }
+
+    nav ul li a{
+        display: block;
+        font-size: 15px;
+        color: black;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+    }
+
+    #scroll-to-button{
+        margin: -40px;
+        left: 30%;
+    }
+
+    .place1 img{
+        position: inherit;
+        width: 100%;
+        height: inherit;
+        margin: 10px auto;
+        
+    }
+
+    .place2 img{
+        position: inherit;
+        width: 100%;
+        height: inherit;
+        margin: 10px auto;
+        
+    }
+
+    .place3 img{
+        position: inherit;
+        width: 100%;
+        height: inherit;
+        margin: 10px auto;
+        
+    }
+    .zoomed {
+        transform: scale(1.5); /* Example zoom effect */
+    }
+
+}
